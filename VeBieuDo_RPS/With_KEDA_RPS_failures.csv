@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/,LocustBadStatusCode(code=503),1

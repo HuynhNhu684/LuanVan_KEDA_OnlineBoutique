@@ -1,0 +1,21 @@
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: frontend-dr
+  namespace: default
+spec:
+  host: frontend
+  trafficPolicy:
+    loadBalancer:
+      simple: LEAST_CONN
+---
+apiVersion: networking.istio.io/v1alpha3
+kind: DestinationRule
+metadata:
+  name: productcatalog-dr
+  namespace: default
+spec:
+  host: productcatalogservice
+  trafficPolicy:
+    loadBalancer:
+      simple: LEAST_CONN

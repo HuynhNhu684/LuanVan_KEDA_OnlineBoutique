@@ -1,0 +1,19 @@
+Method,Name,Error,Occurrences
+POST,/cart,"ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",14
+GET,/product/OLJCESPC7Z,"ConnectionRefusedError(10061, '[WinError 10061] No connection could be made because the target machine actively refused it.')",2155
+GET,/,ChunkedEncodingError(ProtocolError('Response ended prematurely')),695
+POST,/cart,HTTPError('422 Client Error: Unprocessable Entity for url: /cart'),4384
+GET,/,RemoteDisconnected('Remote end closed connection without response'),50
+POST,/cart,HTTPError('503 Server Error: Service Unavailable for url: /cart'),249
+POST,/cart,"ConnectionRefusedError(10061, '[WinError 10061] No connection could be made because the target machine actively refused it.')",858
+GET,/product/OLJCESPC7Z,HTTPError('503 Server Error: Service Unavailable for url: /product/OLJCESPC7Z'),749
+GET,/,HTTPError('503 Server Error: Service Unavailable for url: /'),1471
+GET,/,"ConnectionRefusedError(10061, '[WinError 10061] No connection could be made because the target machine actively refused it.')",4280
+GET,/product/OLJCESPC7Z,RemoteDisconnected('Remote end closed connection without response'),28
+GET,/product/OLJCESPC7Z,HTTPError('504 Server Error: Gateway Timeout for url: /product/OLJCESPC7Z'),2226
+POST,/cart,HTTPError('504 Server Error: Gateway Timeout for url: /cart'),42
+GET,/,"ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",42
+GET,/product/OLJCESPC7Z,ChunkedEncodingError(ProtocolError('Response ended prematurely')),771
+GET,/product/OLJCESPC7Z,"ConnectionResetError(10054, 'An existing connection was forcibly closed by the remote host', None, 10054, None)",13
+POST,/cart,RemoteDisconnected('Remote end closed connection without response'),12
+GET,/,HTTPError('504 Server Error: Gateway Timeout for url: /'),10429

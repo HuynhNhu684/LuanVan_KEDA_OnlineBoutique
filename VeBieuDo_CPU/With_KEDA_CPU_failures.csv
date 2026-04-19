@@ -1,0 +1,2 @@
+Method,Name,Error,Occurrences
+GET,/product/2ZYFJ3GM2N,LocustBadStatusCode(code=503),1

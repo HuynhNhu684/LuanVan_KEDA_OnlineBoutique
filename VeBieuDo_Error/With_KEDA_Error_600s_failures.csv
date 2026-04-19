@@ -1,0 +1,28 @@
+Method,Name,Error,Occurrences
+GET,/product/LS4PSXUNUM,HTTPParseError('Incomplete response.'),27
+GET,/product/0PUK6V6EV0,LocustBadStatusCode(code=503),2
+GET,/product/LS4PSXUNUM,LocustBadStatusCode(code=504),97
+GET,/,LocustBadStatusCode(code=503),2
+GET,/product/OLJCESPC7Z,LocustBadStatusCode(code=504),79
+GET,/product/L9ECAV7KIM,HTTPParseError('Incomplete response.'),17
+GET,/,LocustBadStatusCode(code=504),371
+GET,/product/1YMWWN1N4O,LocustBadStatusCode(code=504),69
+GET,/product/66VCHSJNUP,LocustBadStatusCode(code=503),1
+GET,/product/LS4PSXUNUM,LocustBadStatusCode(code=503),1
+GET,/product/66VCHSJNUP,LocustBadStatusCode(code=504),73
+GET,/product/0PUK6V6EV0,LocustBadStatusCode(code=504),92
+GET,/product/L9ECAV7KIM,LocustBadStatusCode(code=504),83
+GET,/product/6E92ZMYYFZ,LocustBadStatusCode(code=503),1
+GET,/product/OLJCESPC7Z,HTTPParseError('Incomplete response.'),26
+GET,/product/L9ECAV7KIM,LocustBadStatusCode(code=503),1
+GET,/product/2ZYFJ3GM2N,HTTPParseError('Incomplete response.'),22
+GET,/product/2ZYFJ3GM2N,LocustBadStatusCode(code=503),2
+GET,/product/2ZYFJ3GM2N,LocustBadStatusCode(code=504),73
+GET,/product/9SIQT8TOJO,HTTPParseError('Incomplete response.'),20
+GET,/product/9SIQT8TOJO,LocustBadStatusCode(code=504),69
+GET,/,HTTPParseError('Incomplete response.'),27
+GET,/product/6E92ZMYYFZ,HTTPParseError('Incomplete response.'),15
+GET,/product/1YMWWN1N4O,HTTPParseError('Incomplete response.'),23
+GET,/product/0PUK6V6EV0,HTTPParseError('Incomplete response.'),26
+GET,/product/6E92ZMYYFZ,LocustBadStatusCode(code=504),65
+GET,/product/66VCHSJNUP,HTTPParseError('Incomplete response.'),17

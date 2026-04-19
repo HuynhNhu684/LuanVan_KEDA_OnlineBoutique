@@ -1,0 +1,4 @@
+Method,Name,Error,Occurrences
+POST,/cart,HTTPParseError('Incomplete response.'),2
+POST,/cart/checkout,LocustBadStatusCode(code=500),21
+POST,/cart,LocustBadStatusCode(code=504),1

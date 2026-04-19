@@ -1,0 +1,49 @@
+apiVersion: keda.sh/v1alpha1  
+kind: ScaledObject
+metadata:
+  name: product-scaler
+  namespace: default
+spec:
+  scaleTargetRef:
+    name: productcatalogservice
+  minReplicaCount: 1
+  maxReplicaCount: 5
+  cooldownPeriod: 30
+  pollingInterval: 15
+
+  triggers:
+  - type: cpu
+    metricType: Utilization 
+    metadata:
+      value: "70" 
+ 
+  - type: memory   
+    metricType: AverageValue
+    metadata:
+      value: "60Mi"
+
+  - type: prometheus
+    metricType: Value 
+    metadata:
+      serverAddress: http://prometheus-server.monitoring.svc.cluster.local
+      metricName: product_RPS
+      threshold: "83" 
+      query: sum(rate(istio_requests_total{destination_service=~"productcatalogservice.*"}[30s])) or vector(0)
+      
+  - type: prometheus
+    metricType: Value 
+    metadata:
+      serverAddress: http://prometheus-server.monitoring.svc.cluster.local
+      metricName: product_Error
+      threshold: "0.01" 
+      query: (sum(rate(istio_requests_total{destination_service=~"productcatalogservice.*", response_code=~"5.*"}[30s])) / (sum(rate(istio_requests_total{destination_service=~"productcatalogservice.*"}[2m])) > 0)) or vector(0)
+
+  advanced:
+      horizontalPodAutoscalerConfig:
+        behavior:
+          scaleDown:
+            stabilizationWindowSeconds: 300
+            policies:
+            - type: Percent
+              value: 50 
+              periodSeconds: 15 
