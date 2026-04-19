@@ -9,7 +9,10 @@
 ## 📝 1. Giới thiệu đề tài
 Đề tài tập trung nghiên cứu và triển khai giải pháp **Reactive Autoscaling đa chiều** sử dụng công cụ **KEDA** trên nền tảng Kubernetes. Khác với cơ chế truyền thống chỉ dựa trên một chiều tài nguyên (CPU/RAM), nghiên cứu này thực hiện co giãn dựa trên sự kết hợp đa chỉ số (multi-metrics) bao gồm: 
 - **Chỉ số sự kiện (Event-driven):** Số lượng yêu cầu trên giây (RPS).
+- **Chỉ số chất lượng dịch vụ (SLA/Quality):** Tỷ lệ lỗi (Error Rate).
 - **Chỉ số tài nguyên (Resource-based):** Mức độ chiếm dụng CPU và RAM.
+
+Cách tiếp cận đa chiều này giúp hệ thống Microservices phản ứng linh hoạt, chính xác hơn trước các biến động lưu lượng, đồng thời tối ưu hóa việc sử dụng tài nguyên và duy trì cam kết chất lượng dịch vụ (SLA) ở mức tốt nhất.
 
 Cách tiếp cận đa chiều này giúp hệ thống Microservices phản ứng linh hoạt, chính xác hơn trước các biến động lưu lượng, đồng thời tối ưu hóa việc sử dụng tài nguyên và đảm bảo chất lượng dịch vụ (SLA).
 
