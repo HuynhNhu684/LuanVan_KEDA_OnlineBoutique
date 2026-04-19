@@ -2,7 +2,7 @@
 
 **Sinh viên thực hiện:** Lê Huỳnh Như  
 **Chuyên ngành:** Mạng máy tính và Truyền thông dữ liệu - Đại học Cần Thơ  
-**Giảng viên hướng dẫn:** [TS. Nguyễn Hữu Vân Long]
+**Giảng viên hướng dẫn:** TS. Nguyễn Hữu Vân Long
 
 ---
 
@@ -47,7 +47,8 @@ Mã nguồn luận văn bao gồm các thành phần quan trọng do sinh viên 
 ### Bước 1: Khởi tạo cụm K8s với Kind
 ```bash
 kind create cluster --config ./release/kind-config.yaml
-Bước 2: Triển khai ứng dụng Online Boutique
+
+### Bước 2: Triển khai ứng dụng Online Boutique
 Triển khai hệ thống microservices mẫu để làm môi trường thực nghiệm.
 
 Bash
