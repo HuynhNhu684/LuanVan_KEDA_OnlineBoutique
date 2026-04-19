@@ -47,5 +47,3 @@ Mã nguồn luận văn bao gồm các thành phần quan trọng do sinh viên 
 ### Bước 1: Khởi tạo cụm K8s với Kind
 ```bash
 kind create cluster --config ./release/kind-config.yaml
-
-\
